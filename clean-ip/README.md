@@ -6,7 +6,7 @@
 
 ## 🇬🇧 English — consumed by Nova Panel "Smart (per-ISP)" mode
 
-Nova Radar (https://github.com/IRNova/NovaRadar) writes its scan results here, **one file per
+Diana Radar (https://github.com/dimoedgard/DianaRadar) writes its scan results here, **one file per
 Iranian carrier**. The panel, when its Smart IP source points at this folder, automatically serves
 each user the file that matches their operator.
 
@@ -31,7 +31,7 @@ even just `all.txt` works. Add carrier files to get per-operator tuning.
 | `all.txt`      | combined fallback                | —      |
 
 ### File format
-Plain text, one entry per line — exactly Nova Radar's "Save to .txt" export:
+Plain text, one entry per line — exactly Diana Radar's "Save to .txt" export:
 ```
 104.18.42.137:443
 [2606:4700::6812:2a89]:2053
@@ -42,7 +42,7 @@ Port defaults to 443 if omitted. IPv6 must be in [brackets]. CSV (incl. XIU2 Chi
 base64 sub links also work, but the plain list above is simplest.
 
 ### How to update (the loop your friend in Iran runs)
-1. Open **Nova Radar**, pick the source(s), scan, let it verify (TCP+TLS) and sort by latency.
+1. Open **Diana Radar**, pick the source(s), scan, let it verify (TCP+TLS) and sort by latency.
 2. **Save to .txt** (or Copy).
 3. Commit the file here under the right carrier name, e.g. `clean-ip/mci.txt`.
    (GitHub web: open `clean-ip/mci.txt` → ✏️ edit → paste → Commit. Or upload the file.)
@@ -53,7 +53,7 @@ base64 sub links also work, but the plain list above is simplest.
 
 ## 🇮🇷 فارسی — مصرف‌شده توسط حالت «هوشمند (هر اپراتور)» پنل Nova
 
-برنامهٔ Nova Radar (https://github.com/IRNova/NovaRadar) نتایج اسکنش را اینجا می‌نویسد، **برای هر
+برنامهٔ Diana Radar (https://github.com/dimoedgard/DianaRadar) نتایج اسکنش را اینجا می‌نویسد، **برای هر
 اپراتور ایرانی یک فایل**. وقتی منبع آی‌پی هوشمند پنل به این پوشه اشاره کند، پنل به‌طور خودکار به هر
 کاربر فایلی را می‌دهد که با اپراتورش می‌خواند.
 
@@ -79,7 +79,7 @@ base64 sub links also work, but the plain list above is simplest.
 | `all.txt`      | جایگزین ترکیبی                   | —      |
 
 ### فرمت فایل
-متن ساده، هر خط یک ورودی — دقیقاً همان خروجی «ذخیره در .txt» در Nova Radar:
+متن ساده، هر خط یک ورودی — دقیقاً همان خروجی «ذخیره در .txt» در Diana Radar:
 ```
 104.18.42.137:443
 [2606:4700::6812:2a89]:2053
@@ -90,7 +90,7 @@ base64 sub links also work, but the plain list above is simplest.
 sub با base64 هم کار می‌کنند، ولی لیست سادهٔ بالا آسان‌تر است.
 
 ### چطور به‌روزرسانی کنیم (حلقه‌ای که دوستت در ایران اجرا می‌کند)
-۱. **Nova Radar** را باز کن، منبع(ها) را انتخاب کن، اسکن کن، بگذار تأیید (TCP+TLS) و بر اساس تأخیر
+۱. **Diana Radar** را باز کن، منبع(ها) را انتخاب کن، اسکن کن، بگذار تأیید (TCP+TLS) و بر اساس تأخیر
    مرتب کند.
 ۲. **ذخیره در .txt** (یا کپی).
 ۳. فایل را اینجا با نام اپراتور درست commit کن، مثلاً `clean-ip/mci.txt`.
