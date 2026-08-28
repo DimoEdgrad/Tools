@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nova Server
+# Diana Server
 
 **Your own proxy server on any VPS, with a full admin panel.**
 
@@ -17,7 +17,7 @@ Turn a plain Linux server into a private, censorship-resistant proxy node in a f
 On a fresh Ubuntu/Debian server, run:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/IRNova/Nova-Server/main/nova-node.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/dimoedgard/Pouyanbakhshi-Server/main/Diana-node.sh)
 ```
 
 The installer sets up the proxy cores, the panel, and the tunnel backends, then prints your panel URL. Open it, set an admin password, and use the **Setup Wizard** to add a domain, a recommended protocol, and your first user.
@@ -25,7 +25,7 @@ The installer sets up the proxy cores, the panel, and the tunnel backends, then 
 To reset a forgotten password from the server:
 
 ```bash
-nova-passwd 'YourNewPassword' --clear-2fa
+Diana-passwd 'YourNewPassword' --clear-2fa
 ```
 
 ---
@@ -61,12 +61,12 @@ nova-passwd 'YourNewPassword' --clear-2fa
 
 ### Domain and free SSL
 - One-click **Let's Encrypt** (Xray steps aside automatically, no manual port 80)
-- **Cloudflare full-auto**: connect a token once, then Nova creates the DNS record and issues a wildcard certificate for you
+- **Cloudflare full-auto**: connect a token once, then Diana creates the DNS record and issues a wildcard certificate for you
 - Or paste a Cloudflare Origin certificate
 - Auto-renewal, applied across all users and inbounds
 
 ### Operations
-- **Multi-node fleet**: manage many Nova servers from one panel, aggregate users and usage, provision remotely
+- **Multi-node fleet**: manage many Diana servers from one panel, aggregate users and usage, provision remotely
 - **REST API** (`/api/v1`, token auth) and a **full Telegram bot** (button menu + a Mini App that opens the whole panel inside Telegram)
 - **Multiple admins** with an owner and reseller roles
 - **Two-factor auth** (Google Authenticator)
@@ -88,11 +88,11 @@ nova-passwd 'YourNewPassword' --clear-2fa
 
 ```
                          :443 (TCP/UDP)
-  clients  ───────────────────────────────►  Nova node
+  clients  ───────────────────────────────►  Diana node
                                               ├─ Xray-core   (VLESS/VMess/Trojan/Reality/SS)
                                               ├─ sing-box    (Hysteria2, UDP)
                                               ├─ AmneziaWG   (obfuscated WireGuard)
-                                              └─ Nova agent  (panel, API, Telegram, automations)
+                                              └─ Diana agent  (panel, API, Telegram, automations)
 ```
 
 The agent is a single Node.js process. Settings live in a local SQLite store. The panel, the REST API, and the Telegram bot all drive the same internal service functions.
@@ -115,11 +115,11 @@ The panel checks for new versions and updates in one click, or turn on automatic
 
 ## Links
 
-- Panel client apps and more: [novaproxy.online](https://novaproxy.online)
-- Telegram: [@irnova_proxy](https://t.me/irnova_proxy)
+- Panel client apps and more: [Dianaproxy.online](https://Dianaproxy.online)
+- Telegram: [@dimoedgard_proxy](https://t.me/dimoedgard_proxy)
 
 ---
 
 <div align="center">
-Nova Server. All rights reserved.
+Diana Server. All rights reserved.
 </div>
