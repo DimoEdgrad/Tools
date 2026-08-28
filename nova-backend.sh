@@ -5,7 +5,7 @@
 #  "Backend mode" forwards to (unlocks VMess + UDP / voice-video calls).
 #
 #  Run on YOUR OWN VPS (you stay in control — nothing is sent anywhere):
-#     bash <(curl -fsSL https://raw.githubusercontent.com/IRNova/Tools/main/nova-backend.sh)
+#     bash <(curl -fsSL https://raw.githubusercontent.com/DimoEdgard/Tools/main/nova-backend.sh)
 #
 #  Or with a custom path/port (port MUST be Cloudflare-allowed: 8080, 8880, 2052, 2082, 2086, 2095):
 #     NOVA_PATH=/mysecret NOVA_PORT=8080 bash <(curl -fsSL .../nova-backend.sh)
